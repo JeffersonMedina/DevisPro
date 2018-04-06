@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
 VisualStudioVersion = 15.0.27428.2027
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DebisPro_App", "DebisPro_App\DebisPro_App.csproj", "{8382913F-28E1-40DF-88E6-0746D2ED092F}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DevisPro_App", "DebisPro_App\DevisPro_App.csproj", "{8382913F-28E1-40DF-88E6-0746D2ED092F}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
