@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using DebisPro_App.Vista;
 
 namespace DebisPro_App
 {
@@ -16,7 +17,12 @@ namespace DebisPro_App
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new Form1());
+            DevisPro sp = new DevisPro();
+            if (sp.ShowDialog() == DialogResult.OK)
+            {
+                Application.Run(new frmPrincipal());
+            }
+            
         }
     }
 }
