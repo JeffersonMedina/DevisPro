@@ -5,6 +5,7 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using DebisPro_App.Vista;
 
+
 namespace DebisPro_App
 {
     static class Program
@@ -15,14 +16,10 @@ namespace DebisPro_App
         [STAThread]
         static void Main()
         {
+            
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            DevisPro sp = new DevisPro();
-            if (sp.ShowDialog() == DialogResult.OK)
-            {
-                Application.Run(new frmPrincipal());
-            }
-            
+            Application.Run(new Form1());
         }
     }
 }
