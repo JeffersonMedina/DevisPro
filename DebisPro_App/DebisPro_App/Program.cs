@@ -19,7 +19,12 @@ namespace DebisPro_App
             
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new Form1());
+            DevisPro dp = new DevisPro();
+            if (dp.ShowDialog() == DialogResult.OK)
+            {
+                Application.Run(new frmPrincipal());
+            }
+            
         }
     }
 }

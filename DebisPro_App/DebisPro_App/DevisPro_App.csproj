@@ -73,6 +73,21 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Vista\frmPrincipal.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Vista\frmPrincipal.Designer.cs">
+      <DependentUpon>frmPrincipal.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Vista\Login-DP.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Vista\Login-DP.Designer.cs">
+      <DependentUpon>Login-DP.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="DevisPro.resx">
+      <DependentUpon>DevisPro.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
@@ -83,6 +98,12 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
+    <EmbeddedResource Include="Vista\frmPrincipal.resx">
+      <DependentUpon>frmPrincipal.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Vista\Login-DP.resx">
+      <DependentUpon>Login-DP.cs</DependentUpon>
+    </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
@@ -99,7 +120,9 @@
   <ItemGroup>
     <Folder Include="controlador\" />
     <Folder Include="Modelo\" />
-    <Folder Include="Vista\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Resources\Devis-pro.jpg" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

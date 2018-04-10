@@ -42,7 +42,7 @@
             // 
             // pictureBox1
             // 
-            this.pictureBox1.Image = global::DebisPro_App.Properties.Resources.LogoDevis_pro;
+            this.pictureBox1.Image = global::DebisPro_App.Properties.Resources.Devis_pro;
             this.pictureBox1.Location = new System.Drawing.Point(369, 12);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(359, 388);
