@@ -123,6 +123,11 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Resources\Devis-pro.jpg" />
+    <None Include="Resources\LogoDevis-pro.png" />
+    <None Include="Resources\icono_mini.jpg" />
+    <None Include="Resources\icon_minimizar.jpg" />
+    <None Include="Resources\icono_maximizar.jpg" />
+    <None Include="Resources\icon_cerrar.jpg" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
