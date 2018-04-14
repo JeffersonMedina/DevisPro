@@ -26,5 +26,10 @@ namespace DebisPro_App.Vista
         {
 
         }
+
+        private void icon_cerrar_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
+        }
     }
 }

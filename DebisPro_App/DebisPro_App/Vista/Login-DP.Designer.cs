@@ -29,111 +29,98 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FLog));
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.LBLlogUsuario = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
-            this.lblLReg = new System.Windows.Forms.LinkLabel();
-            this.txtUsuario = new System.Windows.Forms.TextBox();
-            this.txtPass = new System.Windows.Forms.TextBox();
-            this.btnLog = new System.Windows.Forms.Button();
-            this.btnCan = new System.Windows.Forms.Button();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            this.txt_Usuario = new System.Windows.Forms.TextBox();
+            this.txt_Password = new System.Windows.Forms.TextBox();
+            this.btn_login = new System.Windows.Forms.Button();
+            this.pb_login = new System.Windows.Forms.PictureBox();
+            this.btn_registrar = new System.Windows.Forms.Button();
+            this.icon_cerrar = new System.Windows.Forms.PictureBox();
+            ((System.ComponentModel.ISupportInitialize)(this.pb_login)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.icon_cerrar)).BeginInit();
             this.SuspendLayout();
             // 
-            // pictureBox1
+            // txt_Usuario
             // 
-            this.pictureBox1.Image = global::DebisPro_App.Properties.Resources.Devis_pro;
-            this.pictureBox1.Location = new System.Drawing.Point(369, 12);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(359, 388);
-            this.pictureBox1.TabIndex = 0;
-            this.pictureBox1.TabStop = false;
+            this.txt_Usuario.Location = new System.Drawing.Point(197, 82);
+            this.txt_Usuario.Name = "txt_Usuario";
+            this.txt_Usuario.Size = new System.Drawing.Size(144, 20);
+            this.txt_Usuario.TabIndex = 4;
+            this.txt_Usuario.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
-            // LBLlogUsuario
+            // txt_Password
             // 
-            this.LBLlogUsuario.AutoSize = true;
-            this.LBLlogUsuario.ForeColor = System.Drawing.Color.Red;
-            this.LBLlogUsuario.Location = new System.Drawing.Point(137, 55);
-            this.LBLlogUsuario.Name = "LBLlogUsuario";
-            this.LBLlogUsuario.Size = new System.Drawing.Size(85, 13);
-            this.LBLlogUsuario.TabIndex = 1;
-            this.LBLlogUsuario.Text = "Usuario o correo";
-            this.LBLlogUsuario.Click += new System.EventHandler(this.label1_Click);
+            this.txt_Password.Location = new System.Drawing.Point(197, 135);
+            this.txt_Password.Name = "txt_Password";
+            this.txt_Password.Size = new System.Drawing.Size(144, 20);
+            this.txt_Password.TabIndex = 5;
+            this.txt_Password.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
-            // label2
+            // btn_login
             // 
-            this.label2.AutoSize = true;
-            this.label2.ForeColor = System.Drawing.Color.Red;
-            this.label2.Location = new System.Drawing.Point(147, 120);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(61, 13);
-            this.label2.TabIndex = 2;
-            this.label2.Text = "Contraseña";
+            this.btn_login.FlatAppearance.BorderSize = 0;
+            this.btn_login.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_login.Location = new System.Drawing.Point(278, 173);
+            this.btn_login.Name = "btn_login";
+            this.btn_login.Size = new System.Drawing.Size(75, 23);
+            this.btn_login.TabIndex = 6;
+            this.btn_login.Text = "Ingresar";
+            this.btn_login.UseVisualStyleBackColor = true;
             // 
-            // lblLReg
+            // pb_login
             // 
-            this.lblLReg.AutoSize = true;
-            this.lblLReg.Location = new System.Drawing.Point(153, 339);
-            this.lblLReg.Name = "lblLReg";
-            this.lblLReg.Size = new System.Drawing.Size(60, 13);
-            this.lblLReg.TabIndex = 3;
-            this.lblLReg.TabStop = true;
-            this.lblLReg.Text = "Registrarse";
+            this.pb_login.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.pb_login.Image = global::DebisPro_App.Properties.Resources.sesion;
+            this.pb_login.Location = new System.Drawing.Point(0, 0);
+            this.pb_login.Name = "pb_login";
+            this.pb_login.Size = new System.Drawing.Size(451, 251);
+            this.pb_login.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
+            this.pb_login.TabIndex = 0;
+            this.pb_login.TabStop = false;
             // 
-            // txtUsuario
+            // btn_registrar
             // 
-            this.txtUsuario.Location = new System.Drawing.Point(103, 71);
-            this.txtUsuario.Name = "txtUsuario";
-            this.txtUsuario.Size = new System.Drawing.Size(156, 20);
-            this.txtUsuario.TabIndex = 4;
-            this.txtUsuario.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.btn_registrar.BackColor = System.Drawing.SystemColors.Control;
+            this.btn_registrar.FlatAppearance.BorderSize = 0;
+            this.btn_registrar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_registrar.Location = new System.Drawing.Point(197, 173);
+            this.btn_registrar.Name = "btn_registrar";
+            this.btn_registrar.Size = new System.Drawing.Size(75, 23);
+            this.btn_registrar.TabIndex = 8;
+            this.btn_registrar.Text = "Registrarse";
+            this.btn_registrar.UseVisualStyleBackColor = false;
             // 
-            // txtPass
+            // icon_cerrar
             // 
-            this.txtPass.Location = new System.Drawing.Point(103, 136);
-            this.txtPass.Name = "txtPass";
-            this.txtPass.Size = new System.Drawing.Size(156, 20);
-            this.txtPass.TabIndex = 5;
-            this.txtPass.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            // 
-            // btnLog
-            // 
-            this.btnLog.Location = new System.Drawing.Point(93, 201);
-            this.btnLog.Name = "btnLog";
-            this.btnLog.Size = new System.Drawing.Size(75, 23);
-            this.btnLog.TabIndex = 6;
-            this.btnLog.Text = "Ingresar";
-            this.btnLog.UseVisualStyleBackColor = true;
-            // 
-            // btnCan
-            // 
-            this.btnCan.Location = new System.Drawing.Point(180, 200);
-            this.btnCan.Name = "btnCan";
-            this.btnCan.Size = new System.Drawing.Size(75, 23);
-            this.btnCan.TabIndex = 7;
-            this.btnCan.Text = "Cerrar";
-            this.btnCan.UseVisualStyleBackColor = true;
+            this.icon_cerrar.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.icon_cerrar.Image = global::DebisPro_App.Properties.Resources.icon_cerrar;
+            this.icon_cerrar.Location = new System.Drawing.Point(362, 1);
+            this.icon_cerrar.Name = "icon_cerrar";
+            this.icon_cerrar.Size = new System.Drawing.Size(25, 21);
+            this.icon_cerrar.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.icon_cerrar.TabIndex = 9;
+            this.icon_cerrar.TabStop = false;
+            this.icon_cerrar.Click += new System.EventHandler(this.icon_cerrar_Click);
             // 
             // FLog
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(740, 407);
-            this.Controls.Add(this.btnCan);
-            this.Controls.Add(this.btnLog);
-            this.Controls.Add(this.txtPass);
-            this.Controls.Add(this.txtUsuario);
-            this.Controls.Add(this.lblLReg);
-            this.Controls.Add(this.label2);
-            this.Controls.Add(this.LBLlogUsuario);
-            this.Controls.Add(this.pictureBox1);
+            this.ClientSize = new System.Drawing.Size(451, 251);
+            this.Controls.Add(this.icon_cerrar);
+            this.Controls.Add(this.btn_registrar);
+            this.Controls.Add(this.btn_login);
+            this.Controls.Add(this.txt_Password);
+            this.Controls.Add(this.txt_Usuario);
+            this.Controls.Add(this.pb_login);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MaximizeBox = false;
             this.Name = "FLog";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Devis-Pro";
             this.Load += new System.EventHandler(this.Form1_Load);
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pb_login)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.icon_cerrar)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -141,13 +128,11 @@
 
         #endregion
 
-        private System.Windows.Forms.PictureBox pictureBox1;
-        private System.Windows.Forms.Label LBLlogUsuario;
-        private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.LinkLabel lblLReg;
-        private System.Windows.Forms.TextBox txtUsuario;
-        private System.Windows.Forms.TextBox txtPass;
-        private System.Windows.Forms.Button btnLog;
-        private System.Windows.Forms.Button btnCan;
+        private System.Windows.Forms.PictureBox pb_login;
+        private System.Windows.Forms.TextBox txt_Usuario;
+        private System.Windows.Forms.TextBox txt_Password;
+        private System.Windows.Forms.Button btn_login;
+        private System.Windows.Forms.Button btn_registrar;
+        private System.Windows.Forms.PictureBox icon_cerrar;
     }
 }

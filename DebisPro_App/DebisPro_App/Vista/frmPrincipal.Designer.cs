@@ -28,15 +28,17 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmPrincipal));
             this.MenuVertical = new System.Windows.Forms.Panel();
             this.Barra_titulo = new System.Windows.Forms.Panel();
             this.Panel_Contenedor = new System.Windows.Forms.Panel();
+            this.btn_materiales = new System.Windows.Forms.Button();
             this.icon_minimizar = new System.Windows.Forms.PictureBox();
             this.icon_restaurar = new System.Windows.Forms.PictureBox();
             this.icon_maximizar = new System.Windows.Forms.PictureBox();
             this.icon_cerrar = new System.Windows.Forms.PictureBox();
+            this.btn_login = new System.Windows.Forms.Button();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.button1 = new System.Windows.Forms.Button();
             this.MenuVertical.SuspendLayout();
             this.Barra_titulo.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.icon_minimizar)).BeginInit();
@@ -49,7 +51,8 @@
             // MenuVertical
             // 
             this.MenuVertical.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
-            this.MenuVertical.Controls.Add(this.button1);
+            this.MenuVertical.Controls.Add(this.btn_login);
+            this.MenuVertical.Controls.Add(this.btn_materiales);
             this.MenuVertical.Controls.Add(this.pictureBox1);
             this.MenuVertical.Dock = System.Windows.Forms.DockStyle.Left;
             this.MenuVertical.Location = new System.Drawing.Point(0, 0);
@@ -78,6 +81,20 @@
             this.Panel_Contenedor.Name = "Panel_Contenedor";
             this.Panel_Contenedor.Size = new System.Drawing.Size(1050, 600);
             this.Panel_Contenedor.TabIndex = 2;
+            // 
+            // btn_materiales
+            // 
+            this.btn_materiales.FlatAppearance.BorderSize = 0;
+            this.btn_materiales.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(45)))), ((int)(((byte)(48)))));
+            this.btn_materiales.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_materiales.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_materiales.ForeColor = System.Drawing.Color.White;
+            this.btn_materiales.Location = new System.Drawing.Point(0, 132);
+            this.btn_materiales.Name = "btn_materiales";
+            this.btn_materiales.Size = new System.Drawing.Size(250, 40);
+            this.btn_materiales.TabIndex = 1;
+            this.btn_materiales.Text = "Materiales";
+            this.btn_materiales.UseVisualStyleBackColor = true;
             // 
             // icon_minimizar
             // 
@@ -128,6 +145,22 @@
             this.icon_cerrar.TabStop = false;
             this.icon_cerrar.Click += new System.EventHandler(this.icon_cerrar_Click);
             // 
+            // btn_login
+            // 
+            this.btn_login.FlatAppearance.BorderSize = 0;
+            this.btn_login.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(45)))), ((int)(((byte)(48)))));
+            this.btn_login.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_login.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_login.ForeColor = System.Drawing.Color.White;
+            this.btn_login.Image = global::DebisPro_App.Properties.Resources.login1;
+            this.btn_login.Location = new System.Drawing.Point(3, 598);
+            this.btn_login.Name = "btn_login";
+            this.btn_login.Size = new System.Drawing.Size(250, 40);
+            this.btn_login.TabIndex = 2;
+            this.btn_login.Text = "Login";
+            this.btn_login.UseVisualStyleBackColor = true;
+            this.btn_login.Click += new System.EventHandler(this.button2_Click);
+            // 
             // pictureBox1
             // 
             this.pictureBox1.Image = global::DebisPro_App.Properties.Resources.LogoDevis_pro;
@@ -138,20 +171,6 @@
             this.pictureBox1.TabIndex = 0;
             this.pictureBox1.TabStop = false;
             // 
-            // button1
-            // 
-            this.button1.FlatAppearance.BorderSize = 0;
-            this.button1.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(45)))), ((int)(((byte)(48)))));
-            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button1.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.ForeColor = System.Drawing.Color.White;
-            this.button1.Location = new System.Drawing.Point(0, 132);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(250, 40);
-            this.button1.TabIndex = 1;
-            this.button1.Text = "Materiales";
-            this.button1.UseVisualStyleBackColor = true;
-            // 
             // frmPrincipal
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -161,6 +180,7 @@
             this.Controls.Add(this.Barra_titulo);
             this.Controls.Add(this.MenuVertical);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "frmPrincipal";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "frmPrincipal";
@@ -185,6 +205,7 @@
         private System.Windows.Forms.PictureBox icon_restaurar;
         private System.Windows.Forms.PictureBox icon_minimizar;
         private System.Windows.Forms.PictureBox pictureBox1;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button btn_materiales;
+        private System.Windows.Forms.Button btn_login;
     }
 }
