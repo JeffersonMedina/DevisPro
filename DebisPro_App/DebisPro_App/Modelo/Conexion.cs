@@ -13,7 +13,7 @@ namespace DebisPro_App.Modelo
 
         public Conexion()
         {
-            conexion = new MySqlConnection("server=127.0.0.1;port=3306;database=devispro;Uid=root;pwd=root;");
+            conexion = new MySqlConnection("server = 127.0.0.1; user id = root; pwd=root; persistsecurityinfo = True; database = devispro; allowuservariables = True");
         }
 
         public bool Abrir_Conexion()

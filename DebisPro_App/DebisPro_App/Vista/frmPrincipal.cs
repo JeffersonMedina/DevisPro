@@ -57,5 +57,10 @@ namespace DebisPro_App.Vista
         {
             abrir_Formulario(new frm_Registro());
         }
+
+        private void btn_materiales_Click(object sender, EventArgs e)
+        {
+            abrir_Formulario(new frm_Materiales());
+        }
     }
 }

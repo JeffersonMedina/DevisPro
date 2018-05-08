@@ -30,6 +30,9 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmPrincipal));
             this.MenuVertical = new System.Windows.Forms.Panel();
+            this.btn_transporte = new System.Windows.Forms.Button();
+            this.btn_manodeobra = new System.Windows.Forms.Button();
+            this.btn_equipo = new System.Windows.Forms.Button();
             this.btn_login = new System.Windows.Forms.Button();
             this.btn_materiales = new System.Windows.Forms.Button();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
@@ -39,9 +42,6 @@
             this.icon_maximizar = new System.Windows.Forms.PictureBox();
             this.icon_cerrar = new System.Windows.Forms.PictureBox();
             this.Panel_Contenedor = new System.Windows.Forms.Panel();
-            this.btn_equipo = new System.Windows.Forms.Button();
-            this.btn_manodeobra = new System.Windows.Forms.Button();
-            this.btn_transporte = new System.Windows.Forms.Button();
             this.MenuVertical.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.Barra_titulo.SuspendLayout();
@@ -65,6 +65,48 @@
             this.MenuVertical.Name = "MenuVertical";
             this.MenuVertical.Size = new System.Drawing.Size(250, 650);
             this.MenuVertical.TabIndex = 0;
+            // 
+            // btn_transporte
+            // 
+            this.btn_transporte.FlatAppearance.BorderSize = 0;
+            this.btn_transporte.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(45)))), ((int)(((byte)(48)))));
+            this.btn_transporte.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_transporte.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_transporte.ForeColor = System.Drawing.Color.White;
+            this.btn_transporte.Location = new System.Drawing.Point(0, 270);
+            this.btn_transporte.Name = "btn_transporte";
+            this.btn_transporte.Size = new System.Drawing.Size(250, 40);
+            this.btn_transporte.TabIndex = 4;
+            this.btn_transporte.Text = "Transporte";
+            this.btn_transporte.UseVisualStyleBackColor = true;
+            // 
+            // btn_manodeobra
+            // 
+            this.btn_manodeobra.FlatAppearance.BorderSize = 0;
+            this.btn_manodeobra.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(45)))), ((int)(((byte)(48)))));
+            this.btn_manodeobra.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_manodeobra.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_manodeobra.ForeColor = System.Drawing.Color.White;
+            this.btn_manodeobra.Location = new System.Drawing.Point(0, 224);
+            this.btn_manodeobra.Name = "btn_manodeobra";
+            this.btn_manodeobra.Size = new System.Drawing.Size(250, 40);
+            this.btn_manodeobra.TabIndex = 2;
+            this.btn_manodeobra.Text = "Mano de Obra";
+            this.btn_manodeobra.UseVisualStyleBackColor = true;
+            // 
+            // btn_equipo
+            // 
+            this.btn_equipo.FlatAppearance.BorderSize = 0;
+            this.btn_equipo.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(45)))), ((int)(((byte)(48)))));
+            this.btn_equipo.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_equipo.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_equipo.ForeColor = System.Drawing.Color.White;
+            this.btn_equipo.Location = new System.Drawing.Point(0, 178);
+            this.btn_equipo.Name = "btn_equipo";
+            this.btn_equipo.Size = new System.Drawing.Size(250, 40);
+            this.btn_equipo.TabIndex = 3;
+            this.btn_equipo.Text = "Equipos";
+            this.btn_equipo.UseVisualStyleBackColor = true;
             // 
             // btn_login
             // 
@@ -95,6 +137,7 @@
             this.btn_materiales.TabIndex = 1;
             this.btn_materiales.Text = "Materiales";
             this.btn_materiales.UseVisualStyleBackColor = true;
+            this.btn_materiales.Click += new System.EventHandler(this.btn_materiales_Click);
             // 
             // pictureBox1
             // 
@@ -171,53 +214,10 @@
             // Panel_Contenedor
             // 
             this.Panel_Contenedor.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.Panel_Contenedor.Dock = System.Windows.Forms.DockStyle.Fill;
             this.Panel_Contenedor.Location = new System.Drawing.Point(250, 50);
             this.Panel_Contenedor.Name = "Panel_Contenedor";
             this.Panel_Contenedor.Size = new System.Drawing.Size(1050, 600);
             this.Panel_Contenedor.TabIndex = 2;
-            // 
-            // btn_equipo
-            // 
-            this.btn_equipo.FlatAppearance.BorderSize = 0;
-            this.btn_equipo.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(45)))), ((int)(((byte)(48)))));
-            this.btn_equipo.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btn_equipo.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_equipo.ForeColor = System.Drawing.Color.White;
-            this.btn_equipo.Location = new System.Drawing.Point(0, 178);
-            this.btn_equipo.Name = "btn_equipo";
-            this.btn_equipo.Size = new System.Drawing.Size(250, 40);
-            this.btn_equipo.TabIndex = 3;
-            this.btn_equipo.Text = "Equipos";
-            this.btn_equipo.UseVisualStyleBackColor = true;
-            // 
-            // btn_manodeobra
-            // 
-            this.btn_manodeobra.FlatAppearance.BorderSize = 0;
-            this.btn_manodeobra.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(45)))), ((int)(((byte)(48)))));
-            this.btn_manodeobra.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btn_manodeobra.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_manodeobra.ForeColor = System.Drawing.Color.White;
-            this.btn_manodeobra.Location = new System.Drawing.Point(0, 224);
-            this.btn_manodeobra.Name = "btn_manodeobra";
-            this.btn_manodeobra.Size = new System.Drawing.Size(250, 40);
-            this.btn_manodeobra.TabIndex = 2;
-            this.btn_manodeobra.Text = "Mano de Obra";
-            this.btn_manodeobra.UseVisualStyleBackColor = true;
-            // 
-            // btn_transporte
-            // 
-            this.btn_transporte.FlatAppearance.BorderSize = 0;
-            this.btn_transporte.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(45)))), ((int)(((byte)(48)))));
-            this.btn_transporte.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btn_transporte.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_transporte.ForeColor = System.Drawing.Color.White;
-            this.btn_transporte.Location = new System.Drawing.Point(0, 270);
-            this.btn_transporte.Name = "btn_transporte";
-            this.btn_transporte.Size = new System.Drawing.Size(250, 40);
-            this.btn_transporte.TabIndex = 4;
-            this.btn_transporte.Text = "Transporte";
-            this.btn_transporte.UseVisualStyleBackColor = true;
             // 
             // frmPrincipal
             // 
