@@ -13,7 +13,8 @@ namespace DebisPro_App.Vista
 {
     public partial class frm_Materiales : Form
     {
-        Modelo.Conexion conexion = new Modelo.Conexion();
+        //Modelo.Conexion conexion = new Modelo.Conexion();
+        Modelo.list_Materiales lista_materiales = new Modelo.list_Materiales();
         
         public frm_Materiales()
         {
@@ -47,6 +48,11 @@ namespace DebisPro_App.Vista
                 MessageBox.Show(ex.Message);
             }
             
+        }
+
+        private void frm_Materiales_Load(object sender, EventArgs e)
+        {
+            lista_materiales.List_Materiales(dgv_materiales);
         }
     }
 }

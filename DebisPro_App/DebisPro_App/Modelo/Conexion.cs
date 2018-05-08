@@ -7,7 +7,7 @@ using MySql.Data.MySqlClient;
 
 namespace DebisPro_App.Modelo
 {
-    class Conexion
+    public class Conexion
     {
         public MySqlConnection conexion;
 
